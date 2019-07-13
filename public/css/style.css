@@ -1,0 +1,221 @@
+@font-face {
+  font-family: Vazir;
+  src: url('./font/Vazir.eot');
+  src: url('./font/Vazir.eot?#iefix') format('embedded-opentype'),
+       url('./font/Vazir.woff2') format('woff2'),
+       url('./font/Vazir.woff') format('woff'),
+       url('./font/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('./font/Vazir-Bold.eot');
+  src: url('./font/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./font/Vazir-Bold.woff2') format('woff2'),
+       url('./font/Vazir-Bold.woff') format('woff'),
+       url('./font/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('./font/Vazir-Black.eot');
+  src: url('./font/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+       url('./font/Vazir-Black.woff2') format('woff2'),
+       url('./font/Vazir-Black.woff') format('woff'),
+       url('./font/Vazir-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir-Medium.eot');
+  src: url('Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Vazir-Medium.woff2') format('woff2'),
+       url('Vazir-Medium.woff') format('woff'),
+       url('Vazir-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir-Light.eot');
+  src: url('Vazir-Light.eot?#iefix') format('embedded-opentype'),
+       url('Vazir-Light.woff2') format('woff2'),
+       url('Vazir-Light.woff') format('woff'),
+       url('Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Vazir;
+  src: url('Vazir-Thin.eot');
+  src: url('Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+       url('Vazir-Thin.woff2') format('woff2'),
+       url('Vazir-Thin.woff') format('woff'),
+       url('Vazir-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-size: 2rem;
+    background-position: center;
+    background-image: url(../img/mainback.jpg);
+    font-family: 'Vazir';
+    font-weight: normal;
+    direction: rtl;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.over{
+  overflow: scroll;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    line-height: 1; 
+    backdrop-filter: blur(50px);  
+    -webkit-backdrop-filter: blur(50px);
+    max-width: 50%;
+    max-height: 50%;
+    padding: 20px 40px;
+  }
+  
+body a{
+    text-decoration-line: none;
+}
+  .starter-template {
+      font-size: 1em;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  .tbacks{
+      background-color: rgba(255,255,255,0.2);
+  }
+  .tbackm{
+    background-color: rgba(200,200,200,0.5);
+}.tbackL{
+    background-color: rgba(200,200,200,0.7);
+}
+
+
+  .textShadow{
+    text-shadow: 2px 2px rgb(200,200,200);
+
+  }
+
+  /*
+  
+  font sec
+  */
+
+
+  input[type=range].ranger {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 5.3px 0;
+  }
+  input[type=range].ranger:focus {
+    outline: none;
+  }
+  input[type=range].ranger::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #1f59ff;
+    border-radius: 25px;
+    border: 0px solid #000001;
+  }
+  input[type=range].ranger::-webkit-slider-thumb {
+    box-shadow: 1.9px 1.9px 1px #000000, 0px 0px 1.9px #0d0d0d;
+    border: 0px solid #000000;
+    height: 19px;
+    width: 29px;
+    border-radius: 44px;
+    background: #006fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5.3px;
+  }
+  input[type=range].ranger:focus::-webkit-slider-runnable-track {
+    background: #3e70ff;
+  }
+  input[type=range].ranger::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #1f59ff;
+    border-radius: 25px;
+    border: 0px solid #000001;
+  }
+  input[type=range].ranger::-moz-range-thumb {
+    box-shadow: 1.9px 1.9px 1px #000000, 0px 0px 1.9px #0d0d0d;
+    border: 0px solid #000000;
+    height: 19px;
+    width: 29px;
+    border-radius: 44px;
+    background: #006fff;
+    cursor: pointer;
+  }
+  input[type=range].ranger::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range].ranger::-ms-fill-lower {
+    background: #0042ff;
+    border: 0px solid #000001;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  }
+  input[type=range].ranger::-ms-fill-upper {
+    background: #1f59ff;
+    border: 0px solid #000001;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  }
+  input[type=range].ranger::-ms-thumb {
+    box-shadow: 1.9px 1.9px 1px #000000, 0px 0px 1.9px #0d0d0d;
+    border: 0px solid #000000;
+    height: 19px;
+    width: 29px;
+    border-radius: 44px;
+    background: #006fff;
+    cursor: pointer;
+    height: 8.4px;
+  }
+  input[type=range].ranger:focus::-ms-fill-lower {
+    background: #1f59ff;
+  }
+  input[type=range].ranger:focus::-ms-fill-upper {
+    background: #3e70ff;
+  }
+  
