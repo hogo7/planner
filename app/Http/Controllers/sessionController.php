@@ -30,8 +30,9 @@ class sessionController extends Controller{
        $request->session()->put('Phone',$TheUser['PhoneNumber']);
        $request->session()->put('email',$TheUser['email']);
        //  $request->session()->put('')
+        
         }
-       dd($request->session());
+        return redirect()->route('home');
     }
     
     

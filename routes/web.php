@@ -13,8 +13,6 @@
 
 Route::get('/', 'PagesController@index');
 
-
-
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mbti/{task}/{page?}','TestsController@mbti')->name('mbti');
 Route::get('/tasks/{task}/{page?}','TestsController@tasks')->name('task');
