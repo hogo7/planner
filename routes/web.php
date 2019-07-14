@@ -21,3 +21,4 @@ Route::get('/tasks/{task}/{page?}','TestsController@tasks')->name('task');
 Route::get('/register','registerController@index')->name('register');
 Route::post('/register','registerController@create')->name('register');
 Route::get('/login','sessionController@index')->name('login');
+Route::post('/login','sessionController@createSession')->name('loginPost');
