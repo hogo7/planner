@@ -38,7 +38,7 @@ class registerController extends Controller {
 
         //store 
         $user->save();
-        dd('test');
+       // dd('test');
         auth()->login($user);
         //redirect
 

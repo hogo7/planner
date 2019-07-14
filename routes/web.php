@@ -13,6 +13,9 @@
 
 Route::get('/', 'PagesController@index');
 
+
+Route::group(['middleware' => ['web']], function () {
+    // your routes here
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mbti/{task}/{page?}','TestsController@mbti')->name('mbti');
 Route::get('/tasks/{task}/{page?}','TestsController@tasks')->name('task');
@@ -20,3 +23,5 @@ Route::get('/register','registerController@index')->name('register');
 Route::post('/register','registerController@create')->name('register');
 Route::get('/login','sessionController@index')->name('login');
 Route::post('/login','sessionController@createSession')->name('loginPost');
+Route::post('/logout','sessionController@deleteSession')->name('logout');
+});

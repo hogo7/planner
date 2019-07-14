@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\User;
+use App\Http\Requests;
 use Illuminate\Support\Facades\Hash;
-
+use Illuminate\Http\RedirectResponse;
 
 class sessionController extends Controller{
 
@@ -29,11 +30,19 @@ class sessionController extends Controller{
        $request->session()->put('userid',$TheUser['id']);
        $request->session()->put('Phone',$TheUser['PhoneNumber']);
        $request->session()->put('email',$TheUser['email']);
+       
+      // dd($request->session());
        //  $request->session()->put('')
-        
+       Auth::loginUsingId($TheUser['id'], TRUE);
+       return redirect()->route('home');
         }
-        return redirect()->route('home');
+      
     }
     
-    
+    public function deleteSession(Request $request){
+
+            $request->session()->flush();
+            return redirect()->route('home');
+
+    }
 }
