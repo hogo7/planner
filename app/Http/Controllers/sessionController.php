@@ -15,10 +15,8 @@ class sessionController extends Controller{
 
     public function createSession(Request $request){
 
-
         $user = new User;
 
-        
        // $matchThese = ['field' => 'value', 'password' => Hash::make()];
        $matchThese = ['email' => $request['email']];  
        $selected= $user->where($matchThese)->get();
@@ -32,9 +30,9 @@ class sessionController extends Controller{
        $request->session()->put('Phone',$TheUser['PhoneNumber']);
        $request->session()->put('email',$TheUser['email']);
        //  $request->session()->put('')
-       }
+        }
        dd($request->session());
     }
-       
+    
     
 }
