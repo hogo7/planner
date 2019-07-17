@@ -18,6 +18,7 @@ Route::group(['middleware' => ['web']], function () {
     // your routes here
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/mbti/{task}/{page?}','TestsController@mbti')->name('mbti');
+Route::post('/mbti/create/','mbtiController@create')->name('mbtipost');
 Route::get('/tasks/{task}/{page?}','TestsController@tasks')->name('task');
 Route::get('/register','registerController@index')->name('register');
 Route::post('/register','registerController@create')->name('register');
