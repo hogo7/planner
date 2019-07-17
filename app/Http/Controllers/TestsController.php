@@ -25,10 +25,11 @@ class TestsController extends Controller
 
         $test=new mbtiController;
         switch ($task) {
-           
+          
                 
             case 'create':
-            $result=$this->test->create($data);
+
+            $result=$this->test->create();
                 break;
 
 
@@ -44,12 +45,14 @@ class TestsController extends Controller
             case 'page':
             
         return $test->pages($page);
-            break;
+            
+        break;
+        default :
+        dd('123');
                      }
 
         
 
-        return $result;
 
                                                     }
 
