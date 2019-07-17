@@ -42,6 +42,8 @@ class sessionController extends Controller{
     public function deleteSession(Request $request){
 
             $request->session()->flush();
+         //   dd($request->session());
+            Auth::logout();
             return redirect()->route('home');
 
     }
