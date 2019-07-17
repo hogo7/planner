@@ -197,17 +197,17 @@
       
       <form action="{{route('mbtipost')}}" method="post">
        
-      <input type="text" name="Eres" class="Eres" style="display:none;" value=''>
-      <input type="text" name="Ires" class="Ires" style="display:none;" value=''>
-      <input type="text" name="Nres" class="Nres" style="display:none;" value=''>
-      <input type="text" name="Pres" class="Pres" style="display:none;" value=''>
-      <input type="text" name="Sres" class="Sres" style="display:none;" value=''>
-      <input type="text" name="Fres" class="Fres" style="display:none;" value=''>
-      <input type="text" name="Tres" class="Tres" style="display:none;" value=''>
-      <input type="text" name="Jres" class="Jres" style="display:none;" value=''>
-      <input type="text" name="result" class="mbtiResult" style="display:none;">
+      <input type="text" name="Eres" class="Eres" style="display:none;" value='null'>
+      <input type="text" name="Ires" class="Ires" style="display:none;" value='null'>
+      <input type="text" name="Nres" class="Nres" style="display:none;" value='null'>
+      <input type="text" name="Pres" class="Pres" style="display:none;" value='null'>
+      <input type="text" name="Sres" class="Sres" style="display:none;" value='null'>
+      <input type="text" name="Fres" class="Fres" style="display:none;" value='null'>
+      <input type="text" name="Tres" class="Tres" style="display:none;" value='null'>
+      <input type="text" name="Jres" class="Jres" style="display:none;" value='null'>
+      <input type="text" name="result" class="mbtiResult" style="display:none;" value='null'>
       <input type="submit" class="btn btn-primary" value="ارسال">
-    @csrf
+      @csrf
     </form>
   
   

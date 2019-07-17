@@ -142,6 +142,16 @@ $(document).ready(()=>{
 
             let mark=result(E,I,S,N,T,F,J,P);
             $(".result").text(mark);
+            $("input[name='Eres']").attr('value',E);
+            $("input[name='Ires']").attr('value',I);
+            $("input[name='Nres']").attr('value',N);
+            $("input[name='Sres']").attr('value',S);
+            $("input[name='Fres']").attr('value',F);
+            $("input[name='Tres']").attr('value',T);
+            $("input[name='Jres']").attr('value',J);
+            $("input[name='Pres']").attr('value',P);
+            $(".mbtiResult").attr('value',mark);
+            $(".result").text(mark);
 
         }
     });
@@ -162,16 +172,18 @@ $(document).ready(()=>{
         if(qnum==21){
 
             let mark=result(E,I,S,N,T,F,J,P);
-           $(".result").text(mark);
-            $(".Eres").attr('value',E);
-            $(".Ires").attr('value',I);
-            $(".Nres").attr('value',N);
-            $(".Sres").attr('value',S);
-            $(".Fres").attr('value',F);
-            $(".Tres").attr('value',T);
-            $(".Jres").attr('value',J);
-            $(".Pres").attr('value',P);
+          // alert('i');
+            $("input[name='Eres']").attr('value',E);
+            $("input[name='Ires']").attr('value',I);
+            $("input[name='Nres']").attr('value',N);
+            $("input[name='Sres']").attr('value',S);
+            $("input[name='Fres']").attr('value',F);
+            $("input[name='Tres']").attr('value',T);
+            $("input[name='Jres']").attr('value',J);
+            $("input[name='Pres']").attr('value',P);
             $(".mbtiResult").attr('value',mark);
+            $(".result").text(mark);
+
         }
     });
     

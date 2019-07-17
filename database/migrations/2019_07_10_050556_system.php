@@ -14,9 +14,29 @@ class System extends Migration
     public function up()
     {
 
-        Schema::create('system', function (Blueprint $table) {
+        Schema::create('systems', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+
+            /*
+             * Fields
+             */
+            
+            /*
+             * Foreign Keys
+             */
+            $table->foreign('id', 'userId')
+              ->references('id')
+              ->on('systems')
+              ->onUpdate('cascade')
+              ->onDelete('cascade');
+           
+           
+           
+           
+           
+           
             $table->bigIncrements('id');
-            $table->integer('userId');
+            $table->integer('userId')->unsigned()->nullable();
             $table->string('mbtiResult')->nullable();
             $table->string('mbtiScore')->nullable();
             $table->string('mbtiStatus')->nullable();
@@ -26,6 +46,9 @@ class System extends Migration
             $table->string('belive')->nullable();
             $table->string('userStatus')->nullable();
             $table->string('tasksAlt')->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+
         });
 
 
