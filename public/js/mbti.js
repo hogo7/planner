@@ -26,6 +26,7 @@ function result(E,I,S,N,T,F,J,P){
 
 
         let result=pos1+pos2+pos3+pos4;
+
         return result;
 };
 
@@ -157,14 +158,23 @@ $(document).ready(()=>{
         let  qnext='#q'+qnum;
         $(`${qnext}`).fadeIn();
         console.log(`QN=${qnext},I=${I},S=${S},T=${T},P=${P},F=${F},N=${N},J=${J},E=${E}`);
+        //last question
         if(qnum==21){
 
             let mark=result(E,I,S,N,T,F,J,P);
-            $(".result").text(mark);
-
+           $(".result").text(mark);
+            $(".Eres").attr('value',E);
+            $(".Ires").attr('value',I);
+            $(".Nres").attr('value',N);
+            $(".Sres").attr('value',S);
+            $(".Fres").attr('value',F);
+            $(".Tres").attr('value',T);
+            $(".Jres").attr('value',J);
+            $(".Pres").attr('value',P);
+            $(".mbtiResult").attr('value',mark);
         }
     });
-
+    
 
 
 });
