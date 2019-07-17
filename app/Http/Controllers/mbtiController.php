@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class mbtiController extends Controller
-{
+class mbtiController extends Controller{
 
 
     public function index(){
@@ -13,12 +12,18 @@ class mbtiController extends Controller
         return view('layouts.mbti');
         
     }
+
     public function pages($page){
 
         return view('pages.mbti.'.$page);
     }
-    public function create(){
+
+    public function create(Request $request){
         
+    
+        dd($request->toArray());
+
+
     }
     public function show(){
         
