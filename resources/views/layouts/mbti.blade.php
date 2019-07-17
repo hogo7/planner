@@ -178,7 +178,7 @@
       </div>
 
 
-      <div class="card-body text-right   " style="display:none;  " id="q20">
+      <div class="card-body text-right   " style="display:none;" id="q20">
         <p class="lead "> کدام برای شما سخت تر است</p>
         <button type="button" class="btn btn-block  btn-primary  J" >الف)  دائما در  تقییر باشید</button><br><br>
         <button type="button" class="btn btn-block  btn-primary  P" >ب  )  در روزمرگی و وضعیت ثابت باشید </button>
@@ -189,17 +189,42 @@
 
 
 
-      <div class="card-body text-right   " style="display:none;  " id="q21">
+      <div class="card-body text-right" style="display:none;  " id="q21">
         <h3>نتیجه تست شما</h3>
        <br><br>
        <p class="lead result"></p>
-        <p class="text-mute text-center">کارنامه </p>
-      </div>
+       <p class="text-mute text-center">کارنامه </p>
+      
+      <form action="{{route('mbtipost')}}" method="post">
+       
+      <input type="text" name="Eres" class="Eres" style="display:none;" value=''>
+      <input type="text" name="Ires" class="Ires" style="display:none;" value=''>
+      <input type="text" name="Nres" class="Nres" style="display:none;" value=''>
+      <input type="text" name="Pres" class="Pres" style="display:none;" value=''>
+      <input type="text" name="Sres" class="Sres" style="display:none;" value=''>
+      <input type="text" name="Fres" class="Fres" style="display:none;" value=''>
+      <input type="text" name="Tres" class="Tres" style="display:none;" value=''>
+      <input type="text" name="Jres" class="Jres" style="display:none;" value=''>
+      <input type="text" name="result" class="mbtiResult" style="display:none;">
+      <input type="submit" class="btn btn-primary" value="ارسال">
+    @csrf
+    </form>
+  
+  
 
 
 
+      </div> 
+
+  
     </div>
-</main>
+
+
+
+
+
+
+  </main>
 
 
 @endsection
