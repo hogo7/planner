@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 class HomeController extends Controller
@@ -15,11 +15,6 @@ class HomeController extends Controller
       // dd($request->session());
         
         
-        if($request->session()->has('name')){
-            
-        }else{
-           return redirect()->route('login');
-        }
 
         
     }
@@ -41,6 +36,12 @@ class HomeController extends Controller
     
      public function index()
     {
-        return view('home');
+        if(Auth::check()){
+            
+         return   view('home');
+        }else{
+           return redirect()->route('login');
+        }
+       
     }
 }
