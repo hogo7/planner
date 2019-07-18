@@ -52,7 +52,27 @@
       </div>
       <div class="card-body">
         در دست ساخت 
-        <button type="button" class="btn btn-lg btn-block btn-primary">ورود به تست</button>
+  <p class='lead'>mbti test</p>
+E ={{ $data['E']}}
+<br>
+I ={{ $data['I']}}
+<br>
+S ={{ $data['S']}}
+<br>
+N ={{ $data['N']}}
+<br>
+P ={{ $data['P']}}
+<br>
+T ={{ $data['T']}}
+<br>
+J ={{ $data['J']}}
+<br>
+F ={{ $data['F']}}
+<br>
+
+نتیجه ={{ $data['result']}}
+<br>
+
       </div>
     </div>
 </main>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\systems;
+use Illuminate\Support\Facades\View;
 class HomeController extends Controller
 {
     /**
@@ -37,8 +39,32 @@ class HomeController extends Controller
      public function index()
     {
         if(Auth::check()){
-            
-         return   view('home');
+            $user=Auth::user()->toarray();
+            $data = new systems;
+            $matchThese = ['userId' => $user['id'] ];  
+        $selected= $data->where($matchThese)->count();
+        
+        if($selected>0){
+        $selected= $data->where($matchThese)->get()->toarray()[0];
+        $mbtiScore=explode('~',$selected['mbtiScore']);
+        
+        //E~I~N~S~T~P~F~J   
+        
+        $data=[
+            'E'     =>$mbtiScore[0],
+            'I'     =>$mbtiScore[1],
+            'N'     =>$mbtiScore[2],
+            'S'     =>$mbtiScore[3],
+            'T'     =>$mbtiScore[4],
+            'P'     =>$mbtiScore[5],
+            'F'     =>$mbtiScore[6],
+            'J'     =>$mbtiScore[7],
+            'result'=>$selected['mbtiResult']
+        ];
+        return View::make('home')->with('data',$data);
+    }
+        
+         return view('home');
         }else{
            return redirect()->route('login');
         }
