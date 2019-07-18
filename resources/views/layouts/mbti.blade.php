@@ -232,7 +232,7 @@
 
 
 @section('js')
-<script src="{{asset('./js/mbti.js')}}"></script>
+<script type="text/javascript" src="{{asset('./js/mbti.js')}}"></script>
 @endsection
  <!--
         <button type="button" class="btn btn-block btn-primary  E" ></button>

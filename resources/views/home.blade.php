@@ -53,24 +53,34 @@
       <div class="card-body">
         در دست ساخت 
   <p class='lead'>mbti test</p>
-E ={{ $data['E']}}
-<br>
-I ={{ $data['I']}}
-<br>
-S ={{ $data['S']}}
-<br>
-N ={{ $data['N']}}
-<br>
-P ={{ $data['P']}}
-<br>
-T ={{ $data['T']}}
-<br>
-J ={{ $data['J']}}
-<br>
-F ={{ $data['F']}}
-<br>
+E ={{ $info['E']}} |
 
-نتیجه ={{ $data['result']}}
+I ={{ $info['I']}} |
+
+S ={{ $info['S']}} |
+
+N ={{ $info['N']}} |
+
+P ={{ $info['P']}} |
+
+T ={{ $info['T']}} |
+
+J ={{ $info['J']}} |
+
+F ={{ $info['F']}} |
+
+
+نتیجه ={{ $info['result']}}
+
+
+<canvas id="myChart" class='container' width="50%" height="20px"></canvas>
+<script type="text/javascript">
+
+  let data = {!! json_encode($info) !!};
+
+    console.log(data);
+
+</script>
 <br>
 
       </div>
@@ -79,4 +89,9 @@ F ={{ $data['F']}}
 
       
 
+@endsection
+
+
+@section('js')
+<script type="text/javascript" src="{{asset('./js/mbtiChart.js')}}"></script>
 @endsection

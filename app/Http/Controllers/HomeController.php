@@ -50,7 +50,7 @@ class HomeController extends Controller
         
         //E~I~N~S~T~P~F~J   
         
-        $data=[
+        $info=[
             'E'     =>$mbtiScore[0],
             'I'     =>$mbtiScore[1],
             'N'     =>$mbtiScore[2],
@@ -61,7 +61,7 @@ class HomeController extends Controller
             'J'     =>$mbtiScore[7],
             'result'=>$selected['mbtiResult']
         ];
-        return View::make('home')->with('data',$data);
+        return View::make('home')->with('info',$info);
     }
         
          return view('home');

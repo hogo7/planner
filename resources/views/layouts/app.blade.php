@@ -94,13 +94,14 @@
 
 
    
-<script
-			  src="https://code.jquery.com/jquery-3.4.1.js"
-			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			  crossorigin="anonymous"></script>
-              <script src="{{asset('./js/popper.min.js')}}"></script>
-              <script src="{{asset('./js/bootstrap-flash-alert.min.js')}}"></script>
-              <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>    <script src="{{asset('./js/bootstrap.bundle.js')}}"></script>
+<script 
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>              <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"  ></script>   
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <!-- <script src="{{asset('./js/bootstrap-flash-alert.min.js')}}"></script> -->
     <!-- <script src="{{asset('./js/jquerymy-1.2.14.min.js')}}"></script>    -->
     <!-- <script src="{{asset('./js/bootstrap.bundle.js')}}"></script> -->
     <!-- <script src="{{asset('./js/dashboard.js')}}"></script> -->
