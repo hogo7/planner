@@ -53,6 +53,7 @@
       <div class="card-body">
         در دست ساخت 
   <p class='lead'>mbti test</p>
+  
 E ={{ $info['E']}} |
 
 I ={{ $info['I']}} |
@@ -74,6 +75,7 @@ F ={{ $info['F']}} |
 
 
 <canvas id="myChart" class='container' width="50%" height="20px"></canvas>
+
 <script type="text/javascript">
 
   let data = {!! json_encode($info) !!};
