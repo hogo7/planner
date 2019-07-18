@@ -39,7 +39,8 @@ class registerController extends Controller {
         //store 
         $user->save();
        // dd('test');
-        auth()->login($user);
+       //TODO not working 
+       auth()->login($user);
         //redirect
 
         return redirect()->home();

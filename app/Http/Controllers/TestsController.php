@@ -24,10 +24,10 @@ class TestsController extends Controller
     public function mbti($task, $page=' '){
 
         $test=new mbtiController;
+        
         switch ($task) {
-          
-                
-            case 'create':
+        
+        case 'create':
 
             $result=$this->test->create();
                 break;
